@@ -1,7 +1,17 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <p>{{message}}}</p>
+    <div>
+      <div class="div-inline">
+        <input id="topSearchInput"  style="height: 30px;width: 400px" type="text" source=""
+               placeholder="在千万商品中搜索" urllink="" actualkey="">
+      </div>
+      <a   href="#">
+       <div  style="background-color: black ;display: inline-block; width: 70px; height: 30px;">
+              <img style="padding-top: 8px" src="./assets/search.png" />
+       </div>
+      </a>
+
+    </div>
     <router-view/>
   </div>
 </template>
@@ -25,5 +35,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.div-inline{
+  display:inline-block;
 }
 </style>

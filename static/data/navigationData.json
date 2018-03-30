@@ -1,0 +1,21 @@
+{
+  "name": "navigationItem",
+  "version": "0.0.1",
+  "dependencies": [{
+    "itemIndex":"0",
+    "itemText":"首页"
+  },
+    {
+    "itemIndex":"1",
+    "itemText":"页面一"
+  },
+    {
+      "itemIndex":"1",
+      "itemText":"页面二"
+    },
+    {
+      "itemIndex":"1",
+      "itemText":"页面三"
+    }
+  ]
+}
