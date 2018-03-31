@@ -20,5 +20,6 @@
             }
         }
     }
+    console.log('detailPage');
 </script>
 <style></style>
