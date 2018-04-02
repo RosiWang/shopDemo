@@ -1,19 +1,14 @@
-<template>
-    
+<template xmlns:v-on="http://www.w3.org/1999/xhtml">
+    <div>
+        <p>{{routerData.detailedData.content}}</p>
+        <router-view v-bind:router-detail="routerData"></router-view>
+    </div>
 </template>
-
 <script>
+    import router from '.././router'
     export default{
-        props:["routerData"],
-        data(){
-            return {
-                isActive:this.$route.path.slice(6,7)
-            }
-        }
+        props:["routerData"]
     }
-    console.log('generalPage');
+    console.log('detailPage');
 </script>
-
-<style scoped>
-
-</style>
+<style></style>

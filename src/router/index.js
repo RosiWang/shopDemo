@@ -16,7 +16,7 @@ export default new Router({
             component: navigationBar,
             children:[
                 {
-                    path:"general",
+                    path:"con",
                     component:generalPage,
                     children:[
                         {

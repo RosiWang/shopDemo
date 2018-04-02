@@ -1,6 +1,6 @@
 <template>
 	<div style="margin-top: 150px;">
-		<h1 style="text-align: center;">遥远的404！</h1>
+		<h1 style="text-align: center;">未知的404T_T</h1>
 		<div style="width: 150px;margin: 50px auto;">
 			<button v-on:click="jump(0)" class="btn btn-primary">首页</button>
 			<button v-on:click="jump(1)" class="btn btn-primary">第一页</button>

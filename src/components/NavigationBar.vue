@@ -15,20 +15,21 @@
         </div>
       </nav>
 
-      <div class='media' v-for='(item,index) in routerData.showData' v-on:click='go(item,index)'>
-        <div>
+      <!--内容项显示-->
+      <div  v-for='(item,index) in routerData.showData'  v-on:click='go(item,index)'>
+        <div style="cursor: pointer">
           <div class='media-left'>
             <img class='media-object'  v-bind:src='item.thumbnail'>
           </div>
           <div class='media-body'>
-            <h2 class='media-heading'  v-text='item.title'></h2>
+            <h3 class='media-heading'  v-text='item.title'></h3>
             <span style='font-size:25px;color:#ccc'>{{item.content | more}}</span>
           </div>
         </div>
       </div>
 
     </div>
-    <router-view v-bind:router-nesting='routerData'></router-view>
+    <router-view v-bind:router-data='routerData'></router-view>
   </div>
 
 </template>
