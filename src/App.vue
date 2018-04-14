@@ -78,7 +78,7 @@
                 }
                 else if(this.$route.fullPath.length==9 || this.$route.fullPath.length==20){
                     this.load();
-                    console.log("path:"+this.$route.path)
+                    console.log("path000:"+this.$route.path)
                 }
                 else{
                     router.push("/item/error");
@@ -100,6 +100,16 @@
                 this.change=!this.change;
 
                 if(this.$route.path.indexOf("con")>0){
+                    if(this.$route.path.indexOf("detail")>0){
+                        console.log("路由detail");
+                        this.loading=true;
+                        this.allData.mainShow=false;
+                        setTimeout(e=>{
+                            this.loading = false;
+                           console.log("allData:",this.allData);
+                        },700);
+                        return;
+                    }
                     //获取list中第几个
                     var typeData=this.$route.query.type;
                     this.$nextTick(e=>{
@@ -119,7 +129,6 @@
                             },700);
                         });
                     });
-
                 }else{
                     this.$nextTick(e=>{
                         this.loading=true;

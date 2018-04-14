@@ -28,7 +28,7 @@
         </div>
       </div>
     </div>
-    <router-view v-bind:router-data='routerData'></router-view>
+    <router-view v-bind:router-detail='routerData'></router-view>
   </div>
 
 </template>

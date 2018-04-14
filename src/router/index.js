@@ -18,14 +18,12 @@ export default new Router({
                 {
                     path:"con",
                     name:"comName",
-                    component:generalPage,
-                    children:[
-                        {
-                            path:"detail",
-                            name:"detailName",
-                            component:detailPage
-                        }
-                    ]
+                    component:generalPage
+                },
+                {
+                    path:"detail",
+                    name:"detailName",
+                    component:detailPage
                 }
             ]
         }
