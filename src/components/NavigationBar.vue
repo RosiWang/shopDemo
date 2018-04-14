@@ -27,7 +27,6 @@
           </div>
         </div>
       </div>
-
     </div>
     <router-view v-bind:router-data='routerData'></router-view>
   </div>

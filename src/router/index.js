@@ -11,16 +11,18 @@ Vue.use(VueResource);
 export default new Router({
     routes: [
         {
-            path: '/item/:list/:listNum',
+            path: '/item/:list/:listNum/',
             name: 'shop',
             component: navigationBar,
             children:[
                 {
                     path:"con",
+                    name:"comName",
                     component:generalPage,
                     children:[
                         {
                             path:"detail",
+                            name:"detailName",
                             component:detailPage
                         }
                     ]

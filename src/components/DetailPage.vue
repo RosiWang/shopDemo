@@ -14,7 +14,6 @@
                 test:"556666666"
             }
         }
-
     }
     console.log('detailPage');
 </script>

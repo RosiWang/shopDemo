@@ -19,8 +19,9 @@
                 router.push(this.$route.path.slice(0,9));
             },
             goDetail(){
-                console.log('goto detail page');
-              //  router.push({path:this.$route.path+"/detail"});
+                console.log('goto detail page',this.$route.path);
+                router.push({path:this.$route.path+"/con",params:{userId:'detail'}});
+                console.log('goto detail page2222',this.$route.path);
             }
         }
     }
