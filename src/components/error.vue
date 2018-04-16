@@ -13,7 +13,7 @@
 		methods:{
 			go(num){
 				num==0?router.push("/item/0/0"):router.push("/item/1/0");
-				console.log("error back go path:",this.$route.path)
+				console.log("error back go path:",this.$route.path);
 			}
 		}
 	}

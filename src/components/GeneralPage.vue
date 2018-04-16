@@ -20,7 +20,8 @@
             },
             goDetail(){
                 console.log('goto detail page',this.$route.path);
-                router.push({path:this.$route.path+"/detail"});
+                // router.push({path:this.$route.path+"/detail"});
+                router.push("/item/detail");
                 console.log('goto detail page2222',this.$route.path);
             }
         }

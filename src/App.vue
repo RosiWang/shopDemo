@@ -72,6 +72,7 @@
                 router.push(this.$route.path.slice(0,8)+this.allData.num);
             },
             routePath(){
+                console.log("fullpath length:",this.$route.fullPath.length,this.$route.fullPath);
                 if(this.$route.fullPath=="/"){
                     router.push("/item/0/0");
                     this.load();
@@ -79,6 +80,11 @@
                 else if(this.$route.fullPath.length==9 || this.$route.fullPath.length==20){
                     this.load();
                     console.log("path000:"+this.$route.path)
+                }else if(this.$route.fullPath.length == 12){
+                    console.log("route path::",this.$route.path);
+                    this.loading = false;
+                    this.allData.mainShow=false;
+                    router.push("/item/detail");
                 }
                 else{
                     router.push("/item/error");

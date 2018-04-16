@@ -1,8 +1,7 @@
-<template xmlns:v-on="http://www.w3.org/1999/xhtml">
-    <div style='height:700px;padding-top:100px'>
+<template >
+    <div style="margin-top: 60px;">
+        <h1 style="text-align: center;">详细信息在这里</h1>
         <div>
-           <p>{{rousterInfo.allData.testS}}</p>
-            <img v-bind:src="routerInfo.detailedData.src"/>
             <button v-on:click="goHome">返回首页</button>
         </div>
     </div>
@@ -14,6 +13,7 @@
         methods:{
             goHome(){
                 console.log("返回首页");
+                router.push("/item/0/0");
             }
         }
     }

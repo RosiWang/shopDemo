@@ -19,13 +19,13 @@ export default new Router({
                     path:"con",
                     name:"comName",
                     component:generalPage
-                },
-                {
-                    path:"detail",
-                    name:"detailName",
-                    component:detailPage
                 }
             ]
+        },
+        {
+            path:"/item/detail",
+            name:"detailName",
+            component:detailPage
         }
         ,
         {
